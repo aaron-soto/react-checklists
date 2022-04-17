@@ -4,6 +4,8 @@ import { Navbar } from 'components/navbar/Navbar';
 import { DarkMode } from 'utils/darkmode/DarkMode';
 import { TaskMainListItem } from 'components/task-main-list-item/TaskMainListItem';
 
+import { BsArrowLeftShort, BsArrowRightShort } from 'react-icons/bs';
+
 function App() {
 	return (
 		<div className='App'>
@@ -24,13 +26,19 @@ function App() {
 				</ul>
 			</div> */}
 
-			<div className='container '>
+			<div className='container carousel'>
+				{/* <div className='arrow left'>
+					<BsArrowLeftShort />
+				</div>
+				<div className='arrow right'>
+					<BsArrowRightShort />
+				</div> */}
 				<div className='parent-wrapper'>
-					<div className='child'></div>
-					<div className='child'></div>
-					<div className='child'></div>
-					<div className='child'></div>
-					<div className='child'></div>
+					<div className='child red'></div>
+					<div className='child yellow'></div>
+					<div className='child green'></div>
+					<div className='child orange'></div>
+					<div className='child blue'></div>
 				</div>
 			</div>
 
