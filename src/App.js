@@ -15,14 +15,14 @@ function App() {
 				<Route />
 			</Routes>
 
-			<div className='container lists-container'>
+			{/* <div className='container lists-container'>
 				<h2>To do Lists</h2>
 				<ul className='task-list-main'>
 					<TaskMainListItem id='School' total={10} complete={3} />
 					<TaskMainListItem id='Personal' total={4} complete={3} />
 					<TaskMainListItem id='Work' total={12} complete={7} />
 				</ul>
-			</div>
+			</div> */}
 
 			<div className='container '>
 				<div className='parent-wrapper'>
