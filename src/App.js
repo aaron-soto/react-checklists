@@ -24,10 +24,12 @@ function App() {
 				</ul>
 			</div>
 
-			<div className='container parent-wrapper'>
-				<div className='child'></div>
-				<div className='child'></div>
-				<div className='child'></div>
+			<div className='container '>
+				<div className='parent-wrapper'>
+					<div className='child'></div>
+					<div className='child'></div>
+					<div className='child'></div>
+				</div>
 			</div>
 
 			<div className='container content-container'>
