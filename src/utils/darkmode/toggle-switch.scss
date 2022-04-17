@@ -82,7 +82,7 @@
 	@include theme-aware('background-color', 'color-background-secondary');
 	height: 50px;
 	width: calc(50px * 6);
-	position: absolute;
+	position: fixed;
 	top: calc(100px + 1rem);
 	display: flex;
 	z-index: 10000;
