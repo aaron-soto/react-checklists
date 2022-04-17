@@ -29,6 +29,8 @@ function App() {
 					<div className='child'></div>
 					<div className='child'></div>
 					<div className='child'></div>
+					<div className='child'></div>
+					<div className='child'></div>
 				</div>
 			</div>
 
@@ -42,6 +44,9 @@ function App() {
 					debitis atque magni facilis rerum eum optio, mollitia deleniti. Error,
 					excepturi.
 				</p>
+
+				<input type='text' className='input-box' placeholder='Sample Input' />
+
 				<p>
 					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque illum
 					maiores recusandae voluptas quisquam repellat quo reprehenderit dolor
