@@ -8,8 +8,6 @@ export const Navbar = () => {
 					<span>Login Site</span>
 					<ul>
 						<li>Home</li>
-						<li>Classes</li>
-						<li>Dashboard</li>
 					</ul>
 				</div>
 				<ul className='nav-right'>
