@@ -18,7 +18,7 @@
 	font-size: 1.5rem;
 	line-height: 50px;
 	cursor: pointer;
-	z-index: 10000;
+	z-index: 100000;
 
 	&:hover {
 		font-size: 1.8rem;
@@ -47,7 +47,7 @@
 	transition: left 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 	border-top-right-radius: 5px;
 	border-bottom-right-radius: 5px;
-
+	z-index: 10000;
 	.icon-wrapper {
 		transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 		cursor: pointer;
@@ -85,6 +85,7 @@
 	position: absolute;
 	top: calc(100px + 1rem);
 	display: flex;
+	z-index: 10000;
 	// left: calc(50px * 5);
 	transition: left 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 	left: calc(50px * -6);
