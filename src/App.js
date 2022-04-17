@@ -23,6 +23,12 @@ function App() {
 					<TaskMainListItem id='Work' total={12} complete={7} />
 				</ul>
 			</div>
+
+			<div className='container parent-wrapper'>
+				<div className='child'></div>
+				<div className='child'></div>
+				<div className='child'></div>
+			</div>
 		</div>
 	);
 }
