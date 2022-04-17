@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/react-checklists/static/css/main.2493047a.css",
-    "main.js": "/react-checklists/static/js/main.d856f265.js",
+    "main.css": "/react-checklists/static/css/main.1bef452a.css",
+    "main.js": "/react-checklists/static/js/main.55a7d778.js",
     "index.html": "/react-checklists/index.html",
-    "main.2493047a.css.map": "/react-checklists/static/css/main.2493047a.css.map",
-    "main.d856f265.js.map": "/react-checklists/static/js/main.d856f265.js.map"
+    "main.1bef452a.css.map": "/react-checklists/static/css/main.1bef452a.css.map",
+    "main.55a7d778.js.map": "/react-checklists/static/js/main.55a7d778.js.map"
   },
   "entrypoints": [
-    "static/css/main.2493047a.css",
-    "static/js/main.d856f265.js"
+    "static/css/main.1bef452a.css",
+    "static/js/main.55a7d778.js"
   ]
 }
