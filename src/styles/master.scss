@@ -220,6 +220,7 @@ a {
 	overflow: auto;
 	scroll-snap-type: x mandatory;
 	padding: 0 !important;
+	margin-top: 2rem;
 
 	.child {
 		min-width: 100%;
@@ -234,5 +235,15 @@ a {
 		&:nth-of-type(3) {
 			background-color: $green;
 		}
+	}
+}
+
+.lists-container {
+	margin-top: 5rem !important;
+}
+
+.content-container {
+	:first-child {
+		margin-top: 2rem;
 	}
 }
