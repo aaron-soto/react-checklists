@@ -275,11 +275,11 @@ a {
 .input-group {
 	display: flex;
 	flex-direction: column;
-	width: 50%;
+	width: 100%;
 	margin: 2rem auto;
 
-	@include for-desktop-up {
-		width: 100%;
+	@include for-tablet-landscape-up {
+		width: 50%;
 	}
 
 	.input-box {
