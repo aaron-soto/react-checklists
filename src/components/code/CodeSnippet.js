@@ -2,6 +2,7 @@ import { useState } from 'react';
 
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism';
+// import { dark as darkTheme } from './dark';
 
 import { FiCopy } from 'react-icons/fi';
 
@@ -26,6 +27,7 @@ export const CodeSnippet = (props) => {
 				<span className='clickToCopy' onClick={copyToClipboard}>
 					<FiCopy className='copy-icon' />
 				</span>
+				{/* <SyntaxHighlighter language={props.language} style={darkTheme}> */}
 				<SyntaxHighlighter language={props.language} style={vscDarkPlus}>
 					{props.children}
 					{/* {codeString} */}
