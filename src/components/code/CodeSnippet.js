@@ -5,6 +5,8 @@ import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 import { FiCopy } from 'react-icons/fi';
 
+import './codesnippet.scss';
+
 export const CodeSnippet = (props) => {
 	const [visible, setVisible] = useState(false);
 	const copyToClipboard = () => {
@@ -20,6 +22,7 @@ export const CodeSnippet = (props) => {
 	return (
 		<>
 			<div className='syntax-wrapper'>
+				<span className='language'>{props.language}</span>
 				<span className='clickToCopy' onClick={copyToClipboard}>
 					<FiCopy className='copy-icon' />
 				</span>
@@ -28,7 +31,9 @@ export const CodeSnippet = (props) => {
 					{/* {codeString} */}
 				</SyntaxHighlighter>
 			</div>
-			{visible && <div className='copied'>Copied to clipboard</div>}
+			<div className={`copied ${visible ? 'active' : ''}`}>
+				Copied to clipboard
+			</div>
 		</>
 	);
 };

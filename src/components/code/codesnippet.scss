@@ -1,0 +1,71 @@
+@import 'styles/variables';
+@import 'styles/mixins';
+
+.syntax-wrapper {
+	position: relative;
+	margin: 2rem 0;
+
+	pre,
+	.clickToCopy {
+		border-radius: 5px;
+	}
+
+	.clickToCopy {
+		position: absolute;
+		right: 0.5rem;
+		top: 0.5rem;
+		font-size: 14px;
+		font-weight: 600;
+		border: 1px solid $black;
+		cursor: pointer;
+		height: 1.8rem;
+		width: 1.8rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		.copy-icon {
+			color: white;
+		}
+
+		&:hover {
+			background-color: $black;
+		}
+	}
+
+	.language {
+		@include theme-aware('background-color', 'color-grayscale-100');
+		@include theme-aware('color', 'color-grayscale-400');
+		position: absolute;
+		top: -1.4rem;
+		right: 1rem;
+		font-size: 12px;
+		line-height: 1.4rem;
+		font-weight: 700;
+		padding: 0 1rem;
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
+	}
+}
+
+.copied {
+	z-index: 100000;
+	@include theme-aware('border-color', 'color-grayscale-300');
+	@include theme-aware('background-color', 'color-background-secondary');
+	@include theme-aware-both($color-palettes, 'border-left-color', 'color-l-40');
+	position: fixed;
+	left: 50%;
+	transform: translateX(-50%);
+	border: 1px solid;
+	padding: 0.5rem 1rem;
+	border-left: 3px solid;
+	bottom: 0;
+	opacity: 0;
+	transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	border-radius: 5px;
+
+	&.active {
+		bottom: 1rem;
+		opacity: 1;
+	}
+}

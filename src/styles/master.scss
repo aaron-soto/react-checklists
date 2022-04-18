@@ -287,43 +287,18 @@ a {
 		width: 100%;
 		font-size: 18px;
 		margin: 1rem 0;
-	}
-}
+		@include theme-aware('background-color', 'color-background-secondary');
+		@include theme-aware('border-color', 'color-grayscale-300');
+		outline: none;
+		border: none;
+		border-bottom: 3px solid;
 
-.syntax-wrapper {
-	position: relative;
-	.clickToCopy {
-		position: absolute;
-		right: 0.5rem;
-		top: 0.5rem;
-		font-size: 14px;
-		font-weight: 600;
-		border: 1px solid $black;
-		cursor: pointer;
-		height: 1.8rem;
-		width: 1.8rem;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-
-		.copy-icon {
-			color: white;
-		}
-
-		&:hover {
-			background-color: $black;
+		&:focus {
+			@include theme-aware-both(
+				$color-palettes,
+				'border-bottom-color',
+				'color-base-dark'
+			);
 		}
 	}
-}
-
-.copied {
-	@include theme-aware('border-color', 'color-grayscale-300');
-	@include theme-aware('background-color', 'color-background-secondary');
-	position: fixed;
-	bottom: 1rem;
-	left: 50%;
-	transform: translateX(-50%);
-	border: 1px solid;
-	padding: 0.5rem 1rem;
-	border-bottom: 3px solid;
 }
