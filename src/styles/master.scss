@@ -153,6 +153,10 @@ a {
 	display: inline-block;
 	cursor: pointer;
 	transition: all 0.2s ease-in-out;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
 	&-primary {
 		// @include theme-aware('background-color', 'color-purple-base');
@@ -268,15 +272,20 @@ a {
 	margin-top: 5rem !important;
 }
 
-.content-container {
-	:first-child {
-		margin-top: 2rem;
-	}
-}
+.input-group {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	margin: 2rem auto;
 
-.input-box {
-	padding: 1rem;
-	width: 100%;
-	font-size: 18px;
-	margin: 1rem 0;
+	@include for-desktop-up {
+		width: 100%;
+	}
+
+	.input-box {
+		padding: 1rem;
+		width: 100%;
+		font-size: 18px;
+		margin: 1rem 0;
+	}
 }

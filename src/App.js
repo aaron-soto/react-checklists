@@ -3,8 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import { Navbar } from 'components/navbar/Navbar';
 import { DarkMode } from 'utils/darkmode/DarkMode';
 import { TaskMainListItem } from 'components/task-main-list-item/TaskMainListItem';
-
-import { BsArrowLeftShort, BsArrowRightShort } from 'react-icons/bs';
+import { CodeSnippet } from 'components/code/CodeSnippet';
 
 function App() {
 	return (
@@ -27,12 +26,6 @@ function App() {
 			</div> */}
 
 			<div className='container carousel'>
-				{/* <div className='arrow left'>
-					<BsArrowLeftShort />
-				</div>
-				<div className='arrow right'>
-					<BsArrowRightShort />
-				</div> */}
 				<div className='parent-wrapper'>
 					<div className='child red'></div>
 					<div className='child yellow'></div>
@@ -53,7 +46,18 @@ function App() {
 					excepturi.
 				</p>
 
-				<input type='text' className='input-box' placeholder='Sample Input' />
+				<div className='input-group'>
+					<input type='text' className='input-box' placeholder='Sample Input' />
+					<input type='text' className='input-box' placeholder='Sample Input' />
+					<div className='btn btn-primary'>Click Me</div>
+				</div>
+
+				<CodeSnippet language='javascript'>{`<div className="child red"></div>`}</CodeSnippet>
+				<CodeSnippet language='css'>{`.child {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}`}</CodeSnippet>
 
 				<p>
 					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque illum
