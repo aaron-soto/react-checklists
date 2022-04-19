@@ -278,6 +278,7 @@ h5 {
 		margin: 1rem 0;
 		@include theme-aware('background-color', 'color-background-secondary');
 		@include theme-aware('border-color', 'color-grayscale-300');
+		@include theme-aware('color', 'color-grayscale-100');
 		outline: none;
 		border: none;
 		border-bottom: 3px solid;
@@ -301,4 +302,9 @@ h5 {
 	border: 1px solid;
 	border-radius: 5px;
 	font-size: 1rem;
+}
+
+.loading-header {
+	text-align: center;
+	margin-top: 4rem;
 }

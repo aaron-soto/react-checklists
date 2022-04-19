@@ -1,0 +1,25 @@
+@import 'styles/variables';
+@import 'styles/mixins';
+
+.airports {
+	.results {
+		list-style: none;
+		h2 {
+			@include theme-aware('border-bottom-color', 'color-grayscale-400');
+			border-bottom: 1px solid;
+			padding-bottom: 0.5rem;
+		}
+
+		.result {
+			@include theme-aware('color', 'color-grayscale-100');
+			padding: 0.5rem 1rem;
+			cursor: pointer;
+			display: block;
+			text-decoration: none;
+
+			&:hover {
+				@include theme-aware('background-color', 'color-background-secondary');
+			}
+		}
+	}
+}
