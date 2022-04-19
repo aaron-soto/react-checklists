@@ -15,10 +15,16 @@
 		&-left {
 			display: flex;
 
-			span {
+			.home-link {
 				margin-right: 2rem;
 				font-weight: 600;
+				text-decoration: none;
 				@include theme-aware-both($color-palettes, 'color', 'color-base-dark');
+			}
+
+			a {
+				text-decoration: none;
+				color: currentColor;
 			}
 
 			ul {
