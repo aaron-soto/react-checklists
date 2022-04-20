@@ -72,6 +72,7 @@ export const Home = () => {
 					fugit accusamus dolor libero quo qui quibusdam dicta autem excepturi,
 					repellat neque architecto?
 				</p>
+
 				<p>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
 					aspernatur fugit dolor Lorem ipsum dolor sit amet, consectetur
@@ -88,6 +89,21 @@ export const Home = () => {
 					fugit accusamus dolor libero quo qui quibusdam dicta autem excepturi,
 					repellat neque architecto?
 				</p>
+
+				<iframe
+					src='https://aaron-soto.github.io/interactive-rectangles/'
+					width='100%'
+					height='500'
+					allowfullscreen
+					sandbox
+				>
+					<p>
+						<a href='/en-US/docs/Glossary'>
+							Fallback link for browsers that don't support iframes
+						</a>
+					</p>
+				</iframe>
+
 				<p>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
 					aspernatur fugit dolor <InlineLink href='#'>excepturi</InlineLink>{' '}

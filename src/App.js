@@ -5,8 +5,7 @@ import { DarkMode } from 'utils/darkmode/DarkMode';
 import { TaskMainListItem } from 'components/task-main-list-item/TaskMainListItem';
 
 import { Home } from 'pages/home/Home';
-import { Airports } from 'pages/flights/Airports';
-import { Flights } from 'pages/flights/Flights';
+import { Hangman } from 'pages/hangman/Hangman';
 
 function App() {
 	return (
@@ -16,9 +15,8 @@ function App() {
 			<Navbar />
 
 			<Routes>
+				<Route path='/hangman' element={<Hangman />} />
 				<Route path='/' element={<Home />} />
-				<Route path='/airports' element={<Airports />} />
-				<Route path='/airports/:icao_code' element={<Flights />} />
 			</Routes>
 		</div>
 	);

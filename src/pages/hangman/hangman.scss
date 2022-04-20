@@ -1,0 +1,77 @@
+@import 'styles/variables';
+@import 'styles/mixins';
+
+.game-data {
+	@include theme-aware('background-color', 'color-background-secondary');
+	margin-top: 2rem;
+	padding: 3rem 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+	font-size: 1.4rem;
+
+	.scores {
+		margin: 2rem 0;
+
+		.score {
+			margin: 0 1rem;
+		}
+	}
+
+	.hearts {
+		margin: 2rem 0;
+		font-size: 2rem;
+		color: $red;
+	}
+
+	.game-word {
+		display: flex;
+		gap: 0.8rem;
+		margin: 2rem 0;
+		height: 3rem;
+		.line {
+			@include theme-aware('border-bottom-color', 'color-grayscale-200');
+			border-bottom: 5px solid;
+			width: 2rem;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 1.6rem;
+		}
+	}
+
+	.value {
+		font-weight: 700;
+	}
+}
+
+.game-keys {
+	@include theme-aware('background-color', 'color-background-secondary');
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 2rem;
+	padding: 3rem 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+	font-size: 1.4rem;
+	gap: 1rem;
+
+	.letter {
+		@include theme-aware('background-color', 'color-grayscale-400');
+		height: 3rem;
+		width: 3rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		cursor: pointer;
+		border-radius: 5px;
+
+		&:hover {
+			@include theme-aware('background-color', 'color-grayscale-300');
+		}
+	}
+}
